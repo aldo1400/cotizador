@@ -1,0 +1,61 @@
+@import 'mixins.scss';
+@import 'mixins.scss';
+
+.profile{
+    display:flex;
+    flex-direction:column;
+}
+
+.profile--container{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:0em 1em;
+    @include sm {
+        padding:0em 1em 3em 1em;
+    }
+}
+
+.profile--greeting{
+    font-size:2em;
+    font-weight:300;
+    padding:1em 0;
+color:#494F66;
+    span{
+        color:#2F80ED;
+        font-weight:600;
+    }
+}
+
+.profile--warning{
+   font-weight:400;
+   font-size:1em;
+   padding-bottom:2.5em;
+   color:#494F66;
+}
+
+.profile--title{
+    padding:1em 0;
+   color:#494F66;
+   font-weight:400;
+    
+}
+
+.profile--item{
+    padding-bottom:16px;
+    width: 480px;
+    @include sm {
+        width:100%;
+    }
+}
+
+.profile--button{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.label{
+    font-weight:400;
+    color:#494F66;
+    padding: 1em 0;
+}

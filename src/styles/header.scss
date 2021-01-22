@@ -1,0 +1,28 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.header--container{
+    padding:1em;
+    @include sm {
+        background-color:$light-grey-color;
+    }
+}
+
+.header--title{
+    font-size:2em;
+    font-weight:300;
+    // padding:1em 0;
+    line-height:36px;
+    color:#494F66;
+    span{
+        color:$secondary-color;
+        font-weight:500;
+    }
+}
+
+.header--subtitle{
+    line-height:28px;
+    color:#676F8F;
+    margin-bottom:24px;
+    padding:1em 0;
+}

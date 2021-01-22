@@ -1,0 +1,76 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.detail--container{
+    display:flex;
+    flex-direction: column;
+    border:1px solid #C5CBE0;
+    margin-bottom:2em;
+}
+
+.detail--title{
+    text-align:center;
+    padding:1em 0;
+    background-color: rgb(240, 239, 239);
+    color:$primary-color;
+}
+
+.detail{
+    margin:2em;
+    display: flex;
+    max-height: 200px;
+    border-bottom: 1px solid #C5CBE0;
+}
+
+.detail--features{
+    padding:2em;
+    
+}
+
+.detail--info{
+    flex:4;
+    padding:1em 0;
+    position: relative;
+    &:after{
+        position: absolute;
+        content:'';
+        width:1px;
+        height:70%;
+        background:#C5CBE0;
+        right: 0;
+        top:15px;
+    }
+
+
+ @include sm {
+flex-grow: 0 0 50%;
+
+    }
+}
+
+.detail--image{
+    display:flex;
+    flex:1;
+    padding:1em;
+     @include sm {
+         img{
+             width:100px;
+         }
+
+    }
+}
+
+.detail--name{
+    background:#83CC5E;
+    display: inline-block;
+    border-radius:10px;
+    color:white;
+    padding:5px 7px;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.detail--price{
+    padding:.8em 0;
+    font-size: 1.5em;
+}

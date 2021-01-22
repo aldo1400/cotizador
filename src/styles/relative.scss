@@ -1,0 +1,23 @@
+@import 'mixins.scss';
+
+.relative--card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.relative--form{
+    display:flex;
+     align-items:center;
+    justify-content:center;
+}
+
+
+.relative--items{
+    display:flex;
+    flex-direction:column;
+    @include sm {
+        padding:0 .3em;
+    }
+}
+

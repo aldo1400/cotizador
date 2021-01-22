@@ -1,0 +1,20 @@
+.congratulation--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2em;
+    max-width: 420px;
+    flex:1;
+}
+
+.congratulation--button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.congratulation--message{
+    font-size: .8em;
+    padding:1em 0;
+    line-height:1.5;
+}

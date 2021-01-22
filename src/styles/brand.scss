@@ -1,0 +1,14 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.brand--container{
+    padding: 1.5em 0;
+    @include sm {
+        background:$secondary-color;
+        padding:1.5em 1.5em;
+    }
+}
+
+.brand--image{
+
+}

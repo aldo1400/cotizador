@@ -1,0 +1,53 @@
+@import 'styles/variables.scss';
+@import 'mixins.scss';
+
+.login--form{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:3em;
+    @include sm {
+        padding:1em 1em 3em 1em;
+    }
+}
+
+.login--item{
+    padding-bottom:16px;
+    width: 100%;
+}
+
+.login--title{
+    font-size:1.75em;
+    line-height:36px;
+    color:#494F66;
+    margin-bottom:8px;
+    span{
+        color:$secondary-color;
+    }
+}
+
+.login--subtitle{
+    line-height:28px;
+    color:#676F8F;
+    margin-bottom:24px;
+}
+
+.login--submit{
+    padding:20px;
+    color:#676F8F;
+    background-color:#F0F2FA;
+    text-transform:uppercase;
+    border-radius: 8px;
+    cursor:pointer;
+    border:none;
+    transition: all 7ms linear;
+    &:focus{
+        background-color:$secondary-color;
+        color:white;
+    }
+    
+    @include sm {
+        display:block;
+        width:100%;
+    }
+}

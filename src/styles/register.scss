@@ -1,0 +1,27 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.register{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.register--container{
+    padding:0 1em;
+}
+
+.register--item{
+    padding-bottom:16px;
+    width: 100%;
+}
+
+.register--label{
+    padding:1em 0;
+    color:$bold-grey-color;
+}
+
+.register--button{
+    display:flex;
+    justify-content:flex-end;
+}

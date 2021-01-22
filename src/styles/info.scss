@@ -1,0 +1,54 @@
+@import 'mixins.scss';
+@import 'mixins.scss';
+
+.info--container{
+    display:flex;
+    flex:2;
+    background: url("../images/Base.png") no-repeat ;
+    padding:0 0 2em 4em;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-size: 70% 100%; 
+    @include sm {
+        background: transparent;
+        padding:0;
+    }
+}
+
+.info--title {
+    font-size: 3em;
+    font-weight: 300;
+    padding:.5em 0;
+    span{
+        display:block;
+        font-weight: 600;
+    }
+}
+
+.info--info{
+    padding: 2em 0 7em 0;
+    @include sm {
+        display: none;
+    }
+}
+
+.info--item{
+    display: flex;
+    padding:1em 0;
+    img{
+        width: 15px;
+    }
+    p{
+        padding-left: 15px;;
+    }
+    @include sm {
+        display:none;
+    }
+}
+
+.info--footer{
+    @include sm {
+        display:none;
+    }
+}

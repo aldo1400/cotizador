@@ -1,0 +1,30 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+.feature--disabled{
+    color:#C5CBE0;
+    text-decoration: line-through;
+}
+
+.icon--active{
+    color:$secondary-color;
+}
+
+.icon--disabled{
+    color:#C5CBE0;
+}
+
+.feature--active{
+    color:black;
+    font-size: 1.1em;
+}
+
+.feature--item{
+    display: flex;
+    padding:1em 0;
+    p{
+        padding-left: 1em;
+    }
+    align-items: baseline;
+}

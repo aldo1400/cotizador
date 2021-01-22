@@ -1,0 +1,17 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.breadcrumb--container{
+    display:flex;
+    padding:1em;
+    text-transform:uppercase;
+    @include sm {
+        background-color: #F7F8FC;
+    }
+}
+
+.breadcrumb--title{
+    span{
+        color:$secondary-color;
+    }
+}

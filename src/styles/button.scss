@@ -1,0 +1,47 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.button{
+    padding:20px;
+    text-transform:uppercase;
+    border-radius: 8px;
+    cursor:pointer;
+    border:none;
+    transition: all 7ms linear;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    &:focus{
+        background-color:$secondary-color;
+        color:white;
+    }
+    &--image{
+        display:inline-block;
+        padding-left:.5em;
+    }
+    @include sm {
+        display:block;
+        width:100%;
+        vertical-align: baseline;
+    }
+}
+
+.button--primary{
+    background-color:$secondary-color;
+    color:white;
+}
+
+.button--secondary{
+    background-color:transparent;
+    color:$grey-color;
+    &:focus{
+        background-color:white;
+        color:$grey-color;
+    }
+}
+
+.button--disabled{
+    background-color:#F0F2FA;
+    color:#676F8F;
+}
+

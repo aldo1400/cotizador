@@ -1,0 +1,74 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.plans--container{
+    padding:3em 1em;
+}
+
+.plan--container{
+    display:flex;
+    flex: 1;
+    margin-bottom: 1em;
+    @include sm {
+        overflow-x:auto;
+        max-width: 100%;
+    }
+}
+
+.plan--card{
+    border: 1px solid $primary-color;
+    max-height:120px;
+    width:140px;
+    border-radius:5px;
+    margin:10px;
+    padding:1em 1em;
+    position:relative;
+}
+
+.plan--card:first-child{
+   margin:10px 0;
+}
+
+.plan--card:last-child{
+    margin:10px 0;
+ }
+
+ 
+.plan--check{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:20px;
+}
+
+.plan--active{
+    border: 3px solid #83CC5E;
+}
+
+.plan--name{
+    text-transform:uppercase;
+}
+
+.plan--currency{
+    font-size:0.5em;
+    text-align:start;
+    vertical-align: super;
+}
+
+.plan--price{
+    font-size:2em;
+    // padding:.4em 0;
+    line-height:1.4em;
+}
+
+.plan--type{
+    font-size:1em;
+}
+
+.plan--actions{
+    display:flex;
+    justify-content:flex-end;
+    @include sm {
+        flex-direction:column;
+    }
+}

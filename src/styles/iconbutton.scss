@@ -1,0 +1,17 @@
+.icon{
+    padding:1em;
+    background-color:transparent;
+    outline:none;
+    text-align:center;
+    text-transform:uppercase;
+    cursor:pointer;
+    border:none;
+    transition: all 7ms linear;
+    display:flex;
+    align-items: center;
+    padding-right:1em;
+
+    &:focus{
+        background-color:white;
+    }
+}

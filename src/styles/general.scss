@@ -1,0 +1,81 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.main--container{
+    display:flex;
+    flex-direction:column;
+}
+.container{
+    display:flex;
+    min-height:100vh;
+    position:relative;
+
+    @include sm {
+        flex-direction:column;
+    }
+}
+
+.base{
+    display:flex;
+    width:50%;
+    background:url("../images/Base.png") no-repeat;
+    background-size: 70% 100%;
+    padding:0em 0em 2em 5em;
+
+    height: 100vh;
+    color: white;
+    text-align:center;
+    @include sm {
+        background:transparent;
+        padding:0;
+        height:10vh;
+        display:block;
+        width:100%;
+    }
+}
+
+
+
+.title{
+    font-size: 2em;
+    font-weight: 300;
+    color:#494F66;
+    span{
+        color:$secondary-color;
+        font-weight: bold;
+    }
+}
+
+.subtitle{
+    color:$primary-color;
+    font-size: 1.2em;
+    color:#9b9b9b;
+    font-weight: 300;
+    padding:1em 0;
+}
+
+.subheading{
+    color:#9b9b9b;
+    font-size:1.2em;
+    line-height: 1.5;
+    span{
+      display: block;
+      color:$secondary-color;
+    }
+}
+
+
+.mobile{
+    display:none !important;
+    @include sm {
+        display:block !important;
+    }
+}
+
+
+.desktop{
+    display:block !important; 
+    @include sm {
+        display:none !important;
+    }
+}
